@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projeto simples de cadastro e listagem de produtos" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="form-icon.ico" type="image/x-icon" />
+
+    <title>Cadastro e Listagem de Produtos</title>
+  </head>
+  <body>
+    <div id="projeto">
+      <section id="secao-form" class="hidden">
+        <h1>Cadastro de Produto</h1>
+        <form id="form-produtos">
+          <label for="nome-produto">Nome do Produto:</label>
+          <input type="text" id="nome-produto" required />
+
+          <label for="descricao-produto">Descrição do Produto:</label>
+          <input type="text" id="descricao-produto" required />
+
+          <label for="valor-produto">Valor do Produto:</label>
+          <input type="number" id="valor-produto" min="0" step="1" required />
+
+          <label>Disponível para Venda?</label>
+          <div>
+            <label> <input type="radio" name="availability" value="Sim" required /> Sim</label>
+            <label> <input type="radio" name="availability" value="Não" /> Não</label>
+          </div>
+          <button type="submit">Cadastrar Produto</button>
+        </form>
+      </section>
+
+      <section id="secao-lista">
+        <h1>Listagem de Produtos</h1>
+        <button id="botao-novo-produto">Cadastrar Novo Produto</button>
+        <button id="botao-limpar-lista">Limpar Listagem</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody id="lista-produtos"></tbody>
+        </table>
+      </section>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+body {
+  margin: 10px 8px 5px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  overflow: hidden;
+}
+
+#app {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form label {
+  display: block;
+  margin: 10px 8px 5px;
+}
+
+form input[type="text"],
+input[type="number"] {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 10px 8px 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  display: block;
+  padding: 10px 15px;
+  margin-top: 15px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #218838;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+table tr {
+  background: white;
+}
+
+.hidden {
+  display: none;
+}
+
+#botao-novo-produto {
+  padding: 10px 15px;
+  margin-top: 10px;
+  font-size: 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#botao-novo-produto:hover {
+  background: #0056b3;
+}
+
+#botao-limpar-lista {
+  padding: 10px 15px;
+  margin-top: 10px;
+  font-size: 16px;
+  background: #e40202;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#botao-limpar-lista:hover {
+  background: #b30101;
+}
+
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
