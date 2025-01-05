@@ -26,11 +26,21 @@ form label {
   margin: 10px 8px 5px;
 }
 
-form input[type="text"],
-input[type="number"] {
+form input[type="text"] {
   width: 50%;
   padding: 8px;
   margin-bottom: 10px 8px 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50%;
+  padding: 8px;
+  margin-top: 10px 8px 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -107,13 +117,19 @@ table tr {
     width: 100%;
   }
 
-  input[type="text"],
-  input[type="number"] {
+  input[type="text"] {
     width: 100%;
   }
 
   table {
     display: block;
     overflow-x: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  input[type="number"] {
+    font-size: 16px;
+    padding: 12px;
   }
 }
